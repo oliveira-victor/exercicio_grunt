@@ -1,0 +1,122 @@
+@fontePrincipal: 'Nunito', sans-serif;
+@fonteDoTitulo: 'Oswald', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16pt;
+    font-family: @fontePrincipal;
+    background-color: #c7c7c7;
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 5% auto;
+}
+
+header {
+    background-color: #186632;
+    color: #fff;
+    padding: 16px;
+}
+
+main {
+    padding: 16px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.side-a {
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+
+    input {
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 8px;
+        font-size: 14pt;
+    }
+
+    #anotacao {
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        height: 200px;
+        margin-bottom: 20px;
+        padding: 8px;
+        font-size: 14pt;
+    }
+
+    button{
+        margin: 0 auto;
+        width: 95%;
+        height: 60px;
+        background-color: #186632;
+        color: #fff;
+        font-size: 16pt;
+        font-family: @fontePrincipal;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover{
+            background-color: #40a361;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.board {
+    margin-top: 50px;
+}
+
+.note {
+    width: 90%;
+    background-color: #faf86a;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+
+    .new-title {
+        width: 95%;
+        margin: 0 auto;
+        font-weight: bold;
+        padding: 12px;
+        border-bottom: 1px solid #000;
+    }
+
+    .new-text {
+        width: 95%;
+        margin: 0 auto;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        margin: 0 auto;
+    }
+    
+    main {
+        display: block;
+    }
+}
